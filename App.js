@@ -14,11 +14,15 @@ export default class App extends React.Component {
           </View>
           <View style={styles.inputview}>
           <TextInput
+          keyboardType='numeric'
+          keyboardAppearance='light'
           style={{height: 100,color:'#fff',fontSize:25,textAlign:'center'}}
           placeholder="Enter first number"
           onChangeText={(num1) => this.setState({num1})}
           />
           <TextInput
+          keyboardType='numeric'
+          keyboardAppearance='light'
           style={{height: 100,color:'#fff',fontSize:25,textAlign:'center'}}
           placeholder="Enter second number"
           onChangeText={(num2) => this.setState({num2})}
